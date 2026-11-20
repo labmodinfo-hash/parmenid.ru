@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^schoolmama.ru$ [OR]
+RewriteCond %{HTTP_HOST} ^www.schoolmama.ru$
+RewriteRule ^.*$ "http\:\/\/parmenid\.ru\/" [R=301,L]
